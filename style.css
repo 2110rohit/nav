@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+    ;
+
+}
+
+img {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0.5, 0.5);
+    display: inline-block;
+    align-items: center;
+    
+
+    
+}
+
+
+img, .blc, .hm, .img1, .img2 {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.blc {
+    width: 400px;
+    height: 400px;
+    margin-top: 180px;
+    animation: fade-up1 0.5s;
+    animation: fade-down1 0.5s;
+
+}
+
+.hm {
+    width: 400px;
+    height: 400px;
+    margin-top: 180px;
+    animation: fade-up1 0.5s;
+    animation: fade-down1 0.5s;
+    
+}
+
+.img1 {
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    display: inline-block;
+    align-items: center;
+    animation: fade-up 0.5s;
+    
+}
+
+.img2 {
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    display: inline-block;
+    align-items: center;
+    animation: fade-up 0.5s;
+}
+
+.button-like {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.blc.button-like,
+.hm.button-like,
+.img1.button-like,
+.img2.button-like {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-like:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+}
+
+@keyframes fade-up1 {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    
+}
+
+@keyframes fade-down1 {
+    0%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+}
